@@ -1,0 +1,344 @@
+@import "_grid.scss";
+@import "_medidas.scss";
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+// contenedor nav en general de todas los html
+.nav__barra{
+    position: fixed;
+    background-color: #e7e7e7;
+    height: 80px;
+    width: 100vw;
+    border-bottom: 1px solid #2d2c2a;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.6);
+    z-index: 100;
+
+    // bloque del logo de la pag
+    .contenedor__logo{
+        display: flex;
+        padding: 0 80px;
+        line-height: 80px;
+        // logo
+        .logo{
+            color: #2d2c2a;
+            font-size: 35px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+    }
+    // bloque ul
+    .contenedor__nav{
+        display: flex;
+        list-style: none;
+        margin-right: 30px;
+        line-height: 80px;
+
+        // elementos li
+        .nav__item{
+            border-radius: 3px;
+            margin: 0 5px;
+            list-style: none;
+
+            // enlaces a
+            .nav__enlace{
+                padding: 7px 13px;
+                text-decoration: none;
+                font-size: 20px;
+                display: block;
+                color: #2d2c2a;
+                text-transform: uppercase;
+
+                // evento hover enlaces a
+            }
+            .nav__enlace:hover {
+                background-color: #2d2c2a rgba(0, 0, 0, 0.4);
+                color: #ED644C;
+                transition: 0.4s;
+            }
+        }
+    }
+    // menu bars
+    .navToggle{
+        background: none;
+        margin-right: 30px;
+        margin-bottom: 15px;
+        font-size: 25px;
+        color: rgb(45, 44, 42);
+        display: none;
+        border: none;
+
+    }
+    // evento para mostrar los ul en pantallas pequenas
+    ul.show{
+        top: 65px;
+    }
+
+}
+// clase resiclada para el uso de flexbox
+.nav__barra--flex{
+    display: flex;
+    justify-content: space-between;
+}
+// contenedor img de fondo
+.img__presentacion img{
+    width: 100%;
+    height: 70%;
+}
+// contenedor index
+.contenedor__index{
+    height: 18vh;
+    width: 100%;
+    margin-top: 70px;
+    margin-bottom: 180px;
+}
+// contenedor padre 
+.contenedor--flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    // contenedor h1
+    .contenedor__titulo{
+        display: flex;
+        align-self: center;
+        margin-top: 35px;
+        font-size: 15px;
+        h1{
+            border-bottom: solid 1px #2d2c2a;
+        }
+    }
+
+    // bloque de presentacion
+    .contenedor__presentacion{
+        align-self: center;
+        display: flex;
+        padding: 0 15px;
+        margin: 5px 10px;
+        color: #2d2c2a;
+    }
+
+    // quienes somos
+    .contenedor__desccripcion{
+        align-self: center;
+        padding: 0px 15px;
+        margin: 0 10px;
+        text-decoration: none;
+        color: #2d2c2a;
+        font-size: 20px;
+    }
+}
+// footer en general de todos los html
+.contenedor__footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top:2vh;
+    background-color: black;
+    width: 100%;
+    height: 8vh;
+
+    // derechos de autor
+    .copy__footer{
+        color: #e7e7e7;
+        font-size: 15px;
+        line-height: 8vh;
+        margin: 0 15px;
+        padding-left: 50px;
+    }
+
+    // icons redes
+    .contenedor__redes{
+        line-height: 8vh;
+        margin: 0 15px;
+        padding-right: 50px;
+        .redes__enlaces{
+            color: #e7e7e7;
+        }
+    }
+}
+// footer de galeria
+.contenedor__footer--bottom{
+    margin-top: 60px;
+}
+// carrusel
+.carousel{
+    display: flex;
+    justify-content: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 85px;
+    width: 90%;
+    height: 40rem;
+
+    // img del carrusel
+    .img__carrusel{
+        width: 50rem;
+        height: 35rem;
+        object-fit: cover;
+    }
+    // botones dentro del carrusel
+    .carousel-indicators button{
+        width: 15px;
+        height: 15px;
+        border-radius: 100%;
+        color: #e7e7e7;
+    }
+    // icono dentro de la etiqueta span
+    .carrusel__control i{
+        font-size: 50px;
+        color: #e7e7e7;
+        background-color: #2d2c2a;
+        padding: 0 15px;
+        opacity: .5;
+        
+    }
+}
+// contenedor div del h1 en servicio.html
+.contenedor__titulo{
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    // $medidash1: ;
+    padding: 15px 0;
+    width: 100%;
+}
+// section de los tipos de servicio
+.contenedor__padre{
+    padding: 20px 40px;
+    .bloque__servicio{
+        padding: 80px 20px;
+        margin: 20px 20px;
+        cursor: pointer;
+        
+        h3{
+            text-transform: uppercase;
+            font-weight: unset;
+        }
+    }
+}
+// Galeria - Portfolio
+.galeria__container{
+    padding: 20px;
+
+        // contenedor de las img
+        .galeria__item{
+            padding: 20px;
+            h2{
+                display: none;
+            }
+            // imagenes de la galeria
+        .img__galeria{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all 0.2s ease;
+            border-radius: 5px;
+            box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.4);
+            margin-top: 65px;
+        }
+        .img__galeria:hover{
+            transform: scale(0.9) ;
+        }
+        
+    }
+}
+// main contacto
+.fondo--img{
+    min-height: 100vh;
+    background-image: url(../img-fondo/fondo-contacto.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+// contenedor contacto
+.container__contanto{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    // padre div de los section
+    .info__contacto{
+        // flex: 1;
+        color: #2d2c2a;
+        max-width: 300px;
+        line-height: 65px;
+        font-size: 18px;
+        i{
+            margin-right: 25px;
+            font-size: 25px;
+        }
+    }
+}
+// Form
+.form__contacto{
+    // flex: 1;
+    max-width: 700px;
+    margin-right: 250px;
+    // sub titulo h2
+    h2{
+        color: #2d2c2a;
+        text-align: center;
+        font-size: 35px;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+    // inputs
+    .text-box{
+        background: #000;
+        color: #e7e7e7;
+        border: none;
+        width: calc(50% - 10px);
+        height: 50px;
+        padding: 12px;
+        font-size: 15px;
+        border-radius: 2px;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        opacity: 0.9;
+    }
+    .text-box:first-child{
+        margin-right: 15px;
+    }
+    // textarea
+    textarea{
+        background: #000;
+        color: #e7e7e7;
+        border: none;
+        width: 100%;
+        padding: 12px;
+        font-size: 15px;
+        min-height: 200px;
+        max-height: 400px;
+        resize: vertical;
+        border-radius: 2px;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+        opacity: 0.9;
+    }
+    // boton
+    .send-btn{
+        float: right;
+        background: #00326D;
+        color: #e7e7e7;
+        border: none;
+        width: 120px;
+        height: 40px;
+        font-size: 15px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        border-radius: 2px;
+        cursor: pointer;
+        transition: 0.3s;
+        transition-property: background;
+    }
+    .send-btn:hover{
+        background: #0070b8;
+
+    }
+}
