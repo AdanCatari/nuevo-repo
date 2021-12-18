@@ -248,6 +248,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 10%;
 }
 
 .contenedor--flex .contenedor__titulo {
@@ -311,6 +312,15 @@
   text-decoration: none;
   color: #e7e7e7;
   font-size: 20px;
+}
+
+.carrusel-team {
+  overflow-y: hidden;
+  position: relative;
+}
+
+.carrusel-team .carousel__lista {
+  overflow: hidden;
 }
 
 .contenedor__footer {

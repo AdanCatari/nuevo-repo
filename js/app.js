@@ -1,9 +1,8 @@
-addEventListener('DOMContentLoaded', () => {
-    const navToggle = document.querySelector('.navToggle')
-    if(navToggle){
-        navToggle.addEventListener('click' , () =>{
-            const nav__barra = document.querySelector('.nav__barra')
-            nav__barra.classList.toggle('show')
-        })
-    }
-})
+window.addEventListener('load', function(){
+    new Glider(this.document.querySelector('.carousel__lista'), {
+        slidesToScroll: 1,
+        slidesToShow: 6,
+        draggable: true,
+        dots: '.carousel__indicadores'
+    });
+});
