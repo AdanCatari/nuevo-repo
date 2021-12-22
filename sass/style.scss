@@ -87,7 +87,7 @@
 // contenedor img de fondo
 .img__presentacion img{
     width: 100%;
-    height: 750px;
+    height: 735px;
     object-fit: cover;
 }
 // contenedor index
@@ -157,29 +157,7 @@
 
 }
 // Carrusel del equipo
-.carrusel-team{
-    width: 100%;
-    display: flex;
-    .carousel__contenedor{
 
-        .carousel__lista{
-            width: 100%;
-            .carousel__elemento{
-                width: 100rem;
-    
-                margin: 0 3rem;
-                img{
-                    width: 100%;
-                    height: 30rem;
-                    object-fit: cover;
-                }
-            }
-        }
-    }
-    .carousel__indicadores{
-        display: flex;
-    }
-}
 // footer en general de todos los html
 .contenedor__footer{
     display: flex;
