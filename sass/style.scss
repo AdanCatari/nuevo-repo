@@ -1,6 +1,6 @@
 @import "_grid.scss";
 @import "_medidas.scss";
-
+@import "_variables.scss";
 
 *{
     padding: 0;
@@ -229,10 +229,6 @@
         }
     }
 }
-// footer de galeria
-.contenedor__footer--bottom{
-    margin-top: 60px;
-}
 // carrusel
 .carousel{
     display: flex;
@@ -249,6 +245,7 @@
         height: 35rem;
         object-fit: cover;
     }
+
     // botones dentro del carrusel
     .carousel-indicators button{
         width: 15px;
@@ -262,8 +259,7 @@
         color: #e7e7e7;
         background-color: #2d2c2a;
         padding: 0 15px;
-        opacity: .5;
-        
+        opacity: .8;
     }
 }
 // contenedor div del h1 en servicio.html
@@ -273,25 +269,54 @@
     text-transform: uppercase;
     // $medidash1: ;
     padding: 15px 0;
+    margin-top: 40px;
     width: 100%;
 }
 // section de los tipos de servicio
 .contenedor__padre{
-    padding: 20px 40px;
+    padding: 0 10%;
     .bloque__servicio{
-        padding: 80px 20px;
+        width: 100%;
+        max-width: 18rem;
+        height: 100%;
+        max-height: 12rem;
+        padding: 50px 20px;
         margin: 20px 20px;
         cursor: pointer;
-        
         h3{
             text-transform: uppercase;
             font-weight: unset;
+            
+        }
+        p{
+            margin: 25px 0;
         }
     }
+    .bloque__servicio--morado{
+        background-color: $colorBranding;
+    }
+    .bloque__servicio--naranja{
+        background-color: $colorEditorial;
+    }
+    .bloque__servicio--rosa{
+        background-color: $colorDigital;
+    }
+    .bloque__servicio--azul{
+        background-color: $colorSociales;
+    }
+    .bloque__servicio--verde{
+        background-color: $colorFotografia;
+    }
+    .bloque__servicio--gris{
+        background-color: $colorIlustracion;
+    }
+    
 }
 // Galeria - Portfolio
 .galeria__container{
     padding: 20px;
+    background-color: #6c757d;
+    height: 94rem;
 
         // contenedor de las img
         .galeria__item{
@@ -318,8 +343,10 @@
 // main contacto
 .fondo--img{
     min-height: 100vh;
-    background-image: url(../img-fondo/fondo.jpg) no-repeat;
+    width: 100%;
+    background-image: url(../img-fondo/fondo-contacto.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -327,10 +354,13 @@
 // contenedor contacto
 .container__contanto{
     width: 100%;
+    max-width: 400px;
+    margin: 0 50px;
+    padding-right: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-
+    opacity: .9;
     // padre div de los section
     .info__contacto{
         // flex: 1;
@@ -341,17 +371,18 @@
         i{
             margin-right: 25px;
             font-size: 25px;
+            color: #2d2c2a;
         }
     }
 }
 // Form
 .form__contacto{
     // flex: 1;
-    max-width: 700px;
-    margin-right: 250px;
+    max-width: 400px;
+    margin-right: 150px;
     // sub titulo h2
     h2{
-        color: #2d2c2a;
+        color: #e7e7e7;
         text-align: center;
         font-size: 35px;
         text-transform: uppercase;
@@ -392,7 +423,7 @@
     // boton
     .send-btn{
         float: right;
-        background: #00326D;
+        background: #212529;
         color: #e7e7e7;
         border: none;
         width: 120px;
@@ -407,7 +438,7 @@
         transition-property: background;
     }
     .send-btn:hover{
-        background: #0070b8;
+        background: #495057;
 
     }
 }

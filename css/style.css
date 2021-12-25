@@ -348,10 +348,6 @@
   color: #e7e7e7;
 }
 
-.contenedor__footer--bottom {
-  margin-top: 60px;
-}
-
 .carousel {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -385,7 +381,7 @@
   color: #e7e7e7;
   background-color: #2d2c2a;
   padding: 0 15px;
-  opacity: .5;
+  opacity: .8;
 }
 
 .contenedor__titulo {
@@ -397,15 +393,20 @@
           justify-content: center;
   text-transform: uppercase;
   padding: 15px 0;
+  margin-top: 40px;
   width: 100%;
 }
 
 .contenedor__padre {
-  padding: 20px 40px;
+  padding: 0 10%;
 }
 
 .contenedor__padre .bloque__servicio {
-  padding: 80px 20px;
+  width: 100%;
+  max-width: 18rem;
+  height: 100%;
+  max-height: 12rem;
+  padding: 50px 20px;
   margin: 20px 20px;
   cursor: pointer;
 }
@@ -415,8 +416,38 @@
   font-weight: unset;
 }
 
+.contenedor__padre .bloque__servicio p {
+  margin: 25px 0;
+}
+
+.contenedor__padre .bloque__servicio--morado {
+  background-color: #924684;
+}
+
+.contenedor__padre .bloque__servicio--naranja {
+  background-color: #be5b3e;
+}
+
+.contenedor__padre .bloque__servicio--rosa {
+  background-color: #d35c78;
+}
+
+.contenedor__padre .bloque__servicio--azul {
+  background-color: #02569c;
+}
+
+.contenedor__padre .bloque__servicio--verde {
+  background-color: #019eb1;
+}
+
+.contenedor__padre .bloque__servicio--gris {
+  background-color: #949398;
+}
+
 .galeria__container {
   padding: 20px;
+  background-color: #6c757d;
+  height: 94rem;
 }
 
 .galeria__container .galeria__item {
@@ -447,8 +478,10 @@
 
 .fondo--img {
   min-height: 100vh;
-  background-image: url(../img-fondo/fondo-contacto.jpg) no-repeat;
+  width: 100%;
+  background-image: url(../img-fondo/fondo-contacto.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -462,6 +495,9 @@
 
 .container__contanto {
   width: 100%;
+  max-width: 400px;
+  margin: 0 50px;
+  padding-right: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -471,6 +507,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  opacity: .9;
 }
 
 .container__contanto .info__contacto {
@@ -483,15 +520,16 @@
 .container__contanto .info__contacto i {
   margin-right: 25px;
   font-size: 25px;
+  color: #2d2c2a;
 }
 
 .form__contacto {
-  max-width: 700px;
-  margin-right: 250px;
+  max-width: 400px;
+  margin-right: 150px;
 }
 
 .form__contacto h2 {
-  color: #2d2c2a;
+  color: #e7e7e7;
   text-align: center;
   font-size: 35px;
   text-transform: uppercase;
@@ -535,7 +573,7 @@
 
 .form__contacto .send-btn {
   float: right;
-  background: #00326D;
+  background: #212529;
   color: #e7e7e7;
   border: none;
   width: 120px;
@@ -553,5 +591,5 @@
 }
 
 .form__contacto .send-btn:hover {
-  background: #0070b8;
+  background: #495057;
 }
