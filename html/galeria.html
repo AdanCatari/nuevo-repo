@@ -17,21 +17,26 @@
     <title>Arte&Diseño - Galeria</title>
 </head>
 <body>
-    <header class="hero__header">
-    <nav class="nav__barra nav__barra--flex"> 
-        <div class="contenedor__logo">
-            <a class="logo" href="#">Arte&Diseño</a>
-        </div>
-        <ul class="contenedor__nav">
-            <li class="nav__item"><a class="nav__enlace" href="../index.html">home</a></li>
-            <li class="nav__item"><a class="nav__enlace" href="./servicio.html">servicio</a></li>
-            <li class="nav__item"><a class="nav__enlace" href="./galeria.html">galeria</a></li>
-            <li class="nav__item"><a class="nav__enlace" href="./contacto.html">contacto</a></li>
-        </ul>
-        <button class="navToggle">
-            <i class="fas fa-bars"></i>
-        </button>
-    </nav>
+    <header class="hero__header .hero__header--flex">
+        <nav class="nav__barra navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <div class="contenedor__logo">
+                    <a class="logo navbar-brand" href="#">Arte&Diseño</a>
+                </div>            
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <ul class="contenedor__nav navbar-nav">
+                        <li class="nav__item"><a class="nav__enlace nav-link" aria-current="page" href="../index.html">home</a></li>
+                        <li class="nav__item"><a class="nav__enlace nav-link" href="./servicio.html">servicios</a></li> 
+                        <li class="nav__item"><a class="nav__enlace nav__enlace--active nav-link" href="./galeria.html">galeria</a></li>
+                        <li class="nav__item"><a class="nav__enlace nav-link" href="./contacto.html">contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
     </header>
     <main>
         <section class="galeria__container galeria__container--grid">

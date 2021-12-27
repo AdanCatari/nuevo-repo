@@ -26,3 +26,12 @@ window.addEventListener('load', function(){
             ]
         });
 });
+addEventListener('DOMContentLoaded', () => {
+    const navToggle = document.querySelector('.boton__menu')
+    if(navToggle){
+        navToggle.addEventListener('click' , () =>{
+            const menuBarra = document.querySelector('.nav__barra')
+            menuBarra.classList.toggle('show')
+        })
+    }
+})

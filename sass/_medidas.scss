@@ -1,0 +1,18 @@
+@media screen and (max-width: 991px) {
+    .hero__header{
+        height: 60px;
+    }
+    .nav__barra{
+        height: 60px;
+        box-shadow: none;
+
+        .contenedor__logo{
+            width: 100%;
+            padding: 0 40px;
+            .logo{
+                font-size: 25px;
+                line-height: 60px;
+            }
+        }
+    }
+}

@@ -7,80 +7,87 @@
     margin: 0;
     box-sizing: border-box;
 }
-
-// contenedor nav en general de todas los html
-.nav__barra{
+// Header general de todos los html
+.hero__header{
     position: fixed;
     background-color: #e7e7e7;
     height: 80px;
     width: 100vw;
-    border-bottom: 1px solid #2d2c2a;
-    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.6);
     z-index: 100;
+    border-bottom: 1px solid #2d2c2a;
 
-    // bloque del logo de la pag
-    .contenedor__logo{
+    // contenedor nav en general de todas los html
+    .nav__barra{
         display: flex;
-        padding: 0 80px;
-        line-height: 80px;
-        // logo
-        .logo{
-            color: #2d2c2a;
-            font-size: 35px;
-            font-weight: bold;
-            text-decoration: none;
-        }
-    }
-    // bloque ul
-    .contenedor__nav{
-        display: flex;
-        list-style: none;
-        margin-right: 30px;
-        line-height: 80px;
+        width: 100%;
+        height: 80px;
+        box-shadow: 5px 0 10px rgba(0, 0, 0, 0.6);
 
-        // elementos li
-        .nav__item{
-            border-radius: 3px;
-            margin: 0 5px;
-            list-style: none;
-
-            // enlaces a
-            .nav__enlace{
-                padding: 7px 13px;
-                text-decoration: none;
-                font-size: 20px;
-                display: block;
+        // bloque del logo de la pag
+        .contenedor__logo{
+            width: 50%;
+            display: flex;
+            padding: 0 80px;
+            line-height: 80px;
+            // logo
+            .logo{
                 color: #2d2c2a;
-                text-transform: uppercase;
-
-                // evento hover enlaces a
-            }
-            .nav__enlace:hover {
-                background-color: #2d2c2a rgba(0, 0, 0, 0.4);
-                color: #ED644C;
-                transition: 0.4s;
+                font-size: 35px;
+                font-weight: bold;
+                text-decoration: none;
             }
         }
-    }
-    // menu bars
-    .navToggle{
-        background: none;
-        margin-right: 30px;
-        margin-bottom: 15px;
-        font-size: 25px;
-        color: rgb(45, 44, 42);
-        display: none;
-        border: none;
+        // bloque ul
+        .contenedor__nav{
+            display: flex;
+            list-style: none;
+            margin-right: 30px;
+            line-height: 80px;
+
+            // elementos li
+            .nav__item{
+                border-radius: 3px;
+                margin: 0 5px;
+                list-style: none;
+
+                // enlaces a
+                .nav__enlace{
+                    padding: 7px 13px;
+                    text-decoration: none;
+                    font-size: 20px;
+                    display: block;
+                    color: #2d2c2a;
+                    text-transform: uppercase;
+
+                }
+                // evento hover enlaces a
+                .nav__enlace:hover,
+                .nav__enlace--active{
+                    background-color: #2d2c2a rgba(0, 0, 0, 0.4);
+                    color: #ED644C;
+                    transition: 0.4s;
+                }
+            }
+        }
+        // menu bars
+        .boton__menu{
+            margin-right: -200px;
+            padding: 50px;
+            font-size: 25px;
+            color: #2d2c2a;
+            cursor: pointer;
+            visibility: hidden;
+        }
+        .contenedor__nav--show{
+            top: 65px;
+        }
 
     }
-    // evento para mostrar los ul en pantallas pequenas
-    ul.show{
-        top: 65px;
-    }
-
+    
 }
+
 // clase resiclada para el uso de flexbox
-.nav__barra--flex{
+.hero__header--flex{
     display: flex;
     justify-content: space-between;
 }
@@ -438,7 +445,9 @@
         transition-property: background;
     }
     .send-btn:hover{
-        background: #495057;
+        background: #f8f9fa;
+        color: #2d2c2a;
+        border: 1px solid #2d2c2a;
 
     }
 }
