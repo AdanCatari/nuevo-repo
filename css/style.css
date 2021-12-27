@@ -95,10 +95,22 @@
   .hero__header {
     height: 60px;
   }
+  .container-fluid {
+    padding: 0;
+  }
   .nav__barra {
     height: 60px;
     -webkit-box-shadow: none;
             box-shadow: none;
+  }
+  .nav__barra .contenedor__nav {
+    position: absolute;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    background-color: #e7e7e7;
+    padding-top: 10%;
   }
   .nav__barra .contenedor__logo {
     width: 100%;
@@ -107,6 +119,31 @@
   .nav__barra .contenedor__logo .logo {
     font-size: 25px;
     line-height: 60px;
+  }
+  .img__presentacion img {
+    height: 600px;
+  }
+  .contenedor__index {
+    height: 35rem;
+  }
+  .contenedor--flex {
+    margin-bottom: 5%;
+  }
+  .contenedor__titulo {
+    margin-left: 3.9rem;
+    margin-top: 0;
+  }
+  .contenedor__descripcion {
+    padding: 0 15px;
+    font-size: 18px;
+    max-height: 2rem;
+    font-size: 18px;
+    margin: 10px 10px;
+  }
+  .carousel__contenedor {
+    padding: 140px 65px 0 65px;
+    margin: 10px 10px;
+    width: 100%;
   }
 }
 
@@ -185,16 +222,13 @@
 }
 
 .hero__header .nav__barra .boton__menu {
-  margin-right: -200px;
-  padding: 50px;
-  font-size: 25px;
-  color: #2d2c2a;
-  cursor: pointer;
-  visibility: hidden;
+  background-color: #e7e7e7;
+  border: none;
+  margin-right: 50px;
 }
 
-.hero__header .nav__barra .contenedor__nav--show {
-  top: 65px;
+.hero__header .nav__barra .boton__menu:hover {
+  border: none;
 }
 
 .hero__header--flex {
@@ -241,7 +275,7 @@
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
-  margin-left: 95px;
+  margin-left: 4.5rem;
   padding: 20px 0;
 }
 

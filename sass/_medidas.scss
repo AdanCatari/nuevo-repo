@@ -2,9 +2,22 @@
     .hero__header{
         height: 60px;
     }
+    .container-fluid{
+        padding: 0;
+    }
     .nav__barra{
         height: 60px;
         box-shadow: none;
+
+        .contenedor__nav{
+            position: absolute;
+            display: block;
+            width: 100vw;
+            height: 100vh;
+            text-align: center;
+            background-color: #e7e7e7;
+            padding-top: 10%;
+        }
 
         .contenedor__logo{
             width: 100%;
@@ -15,4 +28,32 @@
             }
         }
     }
+    .img__presentacion{
+        img{
+            height: 600px;
+        }
+    }
+    .contenedor__index{
+        height: 35rem;
+    }
+    .contenedor--flex{
+        margin-bottom: 5%;
+    }
+    .contenedor__titulo{
+        margin-left: 3.9rem;
+        margin-top: 0;
+    }
+    .contenedor__descripcion{
+        padding: 0 15px;
+        font-size: 18px;
+        max-height: 2rem;
+        font-size: 18px;
+        margin: 10px 10px;
+    }
+    .carousel__contenedor{
+        padding: 140px 65px 0 65px;
+        margin: 10px 10px;
+        width: 100%;
+    }
 }
+

@@ -71,15 +71,12 @@
         }
         // menu bars
         .boton__menu{
-            margin-right: -200px;
-            padding: 50px;
-            font-size: 25px;
-            color: #2d2c2a;
-            cursor: pointer;
-            visibility: hidden;
+            background-color: #e7e7e7;
+            border: none;
+            margin-right: 50px;
         }
-        .contenedor__nav--show{
-            top: 65px;
+        .boton__menu:hover{
+            border: none;
         }
 
     }
@@ -115,7 +112,7 @@
     .contenedor__titulo{
         display: flex;
         justify-content: start;
-        margin-left: 95px;
+        margin-left: 4.5rem;
         padding: 20px 0;
         h1{
             width: 100%;
